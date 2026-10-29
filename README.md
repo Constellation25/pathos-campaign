@@ -1,4 +1,3 @@
-
 # 🦢 PaTHos: The AI Pathway
 
 > **"Cygnus: Us. Geek the Greek."**
