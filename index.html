@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaTHos | The AI Pathway - Constellation25</title>
-    <meta name="description" content="PaTHos (Path OS) is the sovereign AI pathway. Powered by the Cygnus Orchestrator and 25 specialized Qwen layers. Geek the Greek.">
+    <meta name="description" content="PaTHos: The sovereign AI platform with 25+ specialized agents, biometric flow states, encrypted token vault, and ancient Greek wisdom. Geek the Greek.">
     <meta name="theme-color" content="#020617">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root { --pathos-bg: #020617; --pathos-surface: #0f172a; --pathos-border: #1e293b; --pathos-accent: #22d3ee; --pathos-accent-2: #8b5cf6; --pathos-text: #f8fafc; --pathos-muted: #94a3b8; --pathos-gold: #fbbf24; }
@@ -31,12 +29,19 @@
         .section { padding: 100px 0; border-top: 1px solid var(--pathos-border); }
         .section-header { text-align: center; margin-bottom: 64px; }
         .section-header h2 { font-size: 2.75rem; margin-bottom: 20px; }
-        .agent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-        .agent-card { background: rgba(15, 23, 42, 0.6); border: 1px solid var(--pathos-border); border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .section-header p { color: var(--pathos-muted); font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
+        .feature-card { background: rgba(15, 23, 42, 0.6); border: 1px solid var(--pathos-border); border-radius: 12px; padding: 32px; transition: all 0.3s; }
+        .feature-card:hover { border-color: var(--pathos-accent); background: rgba(15, 23, 42, 0.9); transform: translateY(-4px); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 20px; display: block; }
+        .feature-title { font-weight: 700; font-size: 1.3rem; color: var(--pathos-text); margin-bottom: 12px; }
+        .feature-desc { color: var(--pathos-muted); font-size: 0.95rem; line-height: 1.6; }
+        .agent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 48px; }
+        .agent-card { background: rgba(15, 23, 42, 0.6); border: 1px solid var(--pathos-border); border-radius: 12px; padding: 20px; text-align: center; transition: all 0.3s; }
         .agent-card:hover { border-color: var(--pathos-accent-2); background: rgba(15, 23, 42, 0.9); }
-        .agent-icon { font-size: 2rem; margin-bottom: 16px; display: block; }
-        .agent-name { font-weight: 700; font-size: 1.1rem; color: var(--pathos-text); margin-bottom: 4px; }
-        .agent-role { font-size: 0.85rem; color: var(--pathos-accent); text-transform: uppercase; letter-spacing: 0.05em; }
+        .agent-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+        .agent-name { font-weight: 700; font-size: 1rem; color: var(--pathos-text); margin-bottom: 4px; }
+        .agent-role { font-size: 0.75rem; color: var(--pathos-accent); text-transform: uppercase; letter-spacing: 0.05em; }
         .cta-section { text-align: center; padding: 120px 0; background: linear-gradient(180deg, var(--pathos-bg) 0%, rgba(34, 211, 238, 0.08) 100%); }
         .price-tag { font-size: 3.5rem; font-weight: 700; color: var(--pathos-text); margin: 32px 0 8px; }
         .price-tag span { font-size: 1.2rem; color: var(--pathos-muted); font-weight: 400; }
@@ -54,41 +59,124 @@
         <div class="container">
             <div class="formula">CyGeL + N + Us</div>
             <h1>Cygnus: Us.<br>Geek the Greek.</h1>
-            <p>The definitive AI Pathway. We provide the sovereign architecture. You bring the vision. Together, we command the 25 specialized Qwen layers of the Constellation.</p>
+            <p>The sovereign AI platform with 25+ specialized agents, biometric flow states, encrypted token vault, and ancient Greek wisdom. Built for Termux, powered by Qwen.</p>
             <div class="hero-actions">
-                <a href="#join" class="btn btn-primary">Acquire Your Constellation Key</a>
-                <a href="https://github.com/Constellation25/pathos-campaign" class="btn btn-outline">Read the Manifesto</a>
+                <a href="#features" class="btn btn-primary">Explore the Platform</a>
+                <a href="https://github.com/Constellation25/pathos-campaign" class="btn btn-outline">View on GitHub</a>
             </div>
         </div>
     </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Complete Sovereign Stack</h2>
+                <p>Everything you need to build, deploy, and maintain AI-powered workflows from your pocket.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🎛️</span>
+                    <div class="feature-title">Biometric Flow States</div>
+                    <div class="feature-desc">Toggle between 432Hz (deep focus), 40Hz (gamma waves), and 528Hz (renewal) frequencies. Optimize your nervous system for peak cognitive performance.</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔐</span>
+                    <div class="feature-title">Encrypted Token Vault</div>
+                    <div class="feature-desc">Fernet-encrypted local storage for all your API keys. No cloud middlemen. Sovereign control over OpenAI, Anthropic, Google, and local models.</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔄</span>
+                    <div class="feature-title">Sovereign P2P Sync</div>
+                    <div class="feature-desc">Seamless, encrypted synchronization between Termux and Desktop via Syncthing. No GitHub commits for every tweak. Pure peer-to-peer.</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎲</span>
+                    <div class="feature-title">The Agon: Ancient Games</div>
+                    <div class="feature-desc">Challenge the models with Astragaloi (knucklebones), Morra (reflexes), and upcoming Petteia (pure strategy). Test your Areté.</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎬</span>
+                    <div class="feature-title">Content Creator Trinity</div>
+                    <div class="feature-desc">Eris (viral reels), Mars (gaming lore), Mercury (geeky code translations). Generate hooks, scripts, and hashtags with mythological flair.</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🏛️</span>
+                    <div class="feature-title">Philosophical Agents</div>
+                    <div class="feature-desc">Socratic debugging, Aristotelian empirical testing, Cynical sovereignty checks. AI that speaks in the language of ancient wisdom.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Master the Shipping Lanes</h2>
-                <p>Writing code is easy. Shipping it is a nightmare. PaTHos Qwen layers are trained on the arcane lore of deployment.</p>
+                <h2>The 25-Agent Pantheon</h2>
+                <p>Specialized Qwen LoRA layers for every domain of development and creation.</p>
             </div>
             <div class="agent-grid">
-                <div class="agent-card"><span class="agent-icon">📜</span><div class="agent-name">Mercury</div><div class="agent-role">Git & VCS Mastery</div></div>
-                <div class="agent-card"><span class="agent-icon">☁️</span><div class="agent-name">Saturn</div><div class="agent-role">Cloud & Hosting</div></div>
-                <div class="agent-card"><span class="agent-icon">📱</span><div class="agent-name">Haumea</div><div class="agent-role">Mobile Marketplaces</div></div>
-                <div class="agent-card"><span class="agent-icon">️</span><div class="agent-name">Varuna</div><div class="agent-role">Security & Compliance</div></div>
+                <div class="agent-card"><span class="agent-icon">📜</span><div class="agent-name">Mercury</div><div class="agent-role">NLP & Translation</div></div>
+                <div class="agent-card"><span class="agent-icon">💖</span><div class="agent-name">Venus</div><div class="agent-role">Sentiment Analysis</div></div>
+                <div class="agent-card"><span class="agent-icon">🌍</span><div class="agent-name">Earth</div><div class="agent-role">Data Preprocessing</div></div>
+                <div class="agent-card"><span class="agent-icon">⚔️</span><div class="agent-name">Mars</div><div class="agent-role">Gaming & Training</div></div>
+                <div class="agent-card"><span class="agent-icon">⚡</span><div class="agent-name">Jupiter</div><div class="agent-role">Hyperparameter Tuning</div></div>
+                <div class="agent-card"><span class="agent-icon">☁️</span><div class="agent-name">Saturn</div><div class="agent-role">Deployment & Scaling</div></div>
+                <div class="agent-card"><span class="agent-icon">👁️</span><div class="agent-name">Uranus</div><div class="agent-role">Monitoring</div></div>
+                <div class="agent-card"><span class="agent-icon">🌊</span><div class="agent-name">Neptune</div><div class="agent-role">Visualization</div></div>
+                <div class="agent-card"><span class="agent-icon">🔮</span><div class="agent-name">Pluto</div><div class="agent-role">Knowledge Graphs</div></div>
+                <div class="agent-card"><span class="agent-icon">🤖</span><div class="agent-name">Ceres</div><div class="agent-role">Chatbots</div></div>
+                <div class="agent-card"><span class="agent-icon">🎤</span><div class="agent-name">Eris</div><div class="agent-role">Viral Reels</div></div>
+                <div class="agent-card"><span class="agent-icon">🎨</span><div class="agent-name">Haumea</div><div class="agent-role">Image & Video</div></div>
+                <div class="agent-card"><span class="agent-icon">📄</span><div class="agent-name">Makemake</div><div class="agent-role">Document Processing</div></div>
+                <div class="agent-card"><span class="agent-icon">🛡️</span><div class="agent-name">Varuna</div><div class="agent-role">Security & Privacy</div></div>
+                <div class="agent-card"><span class="agent-icon">🏛️</span><div class="agent-name">Socrates</div><div class="agent-role">Debugging</div></div>
+                <div class="agent-card"><span class="agent-icon">🔬</span><div class="agent-name">Aristotle</div><div class="agent-role">Empirical Testing</div></div>
             </div>
         </div>
     </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The High-Fidelity Philosophy</h2>
+                <p>Inspired by boutique audio, built for sovereign development.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🔥</span>
+                    <div class="feature-title">Tubes (The Warmth)</div>
+                    <div class="feature-desc">Like vacuum tubes provide emotional connection, our Qwen LoRA layers deliver AI with soul. No cold, corporate JSON. Pure resonance.</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📯</span>
+                    <div class="feature-title">Horns (The Delivery)</div>
+                    <div class="feature-desc">High-efficiency horn-loaded speakers recreate live dynamics. Our Cygnus CLI delivers with zero latency and maximum clarity.</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔧</span>
+                    <div class="feature-title">Tweaks (The Precision)</div>
+                    <div class="feature-desc">Isolation feet and clean power filters. Sovereign deployment tweaks that isolate your AI from cloud vendor noise.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="join" class="cta-section">
         <div class="container">
             <h2>Join the Constellation.</h2>
             <p style="color: var(--pathos-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">This is not just a software license. It is an invitation to partner with the architecture of tomorrow.</p>
             <div class="price-tag">$365 <span>/ year</span></div>
-            <p style="color: var(--pathos-muted); margin-bottom: 40px;">The Annual Tribute. Full access to the Cygnus Orchestrator, 25 Qwen LoRA layers, and sovereign deployment rights.</p>
+            <p style="color: var(--pathos-muted); margin-bottom: 40px;">The Annual Tribute. Full access to the Cygnus Orchestrator, 25+ Qwen LoRA layers, biometric flow states, encrypted vault, and sovereign deployment rights.</p>
             <div class="hero-actions">
                 <a href="https://www.kre8tivekonceptz.com/PaTHos" class="btn btn-primary">Acquire Your Constellation Key</a>
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 CyGeL White / Kre8tive Holdings. All rights reserved.<br>Proprietary Software. Annual Subscription Required.</p>
+            <p>© 2026 CyGeL White / Kre8tive Holdings. All rights reserved.<br>Proprietary Software. Annual Subscription Required.<br><br>
+            <em>"Choose the code that matters. Choose the stack that stays. Choose the project that outlives the noise."</em></p>
         </div>
     </footer>
 </body>
