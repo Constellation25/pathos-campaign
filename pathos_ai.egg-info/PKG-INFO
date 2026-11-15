@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: pathos-ai
+Version: 1.0.0
+Summary: PaTHos: The AI Pathway. Cygnus: Us. Geek the Greek.
+Author: CyGeL Co - DBA KRE8TIVE KONCEPTZ
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: questionary
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

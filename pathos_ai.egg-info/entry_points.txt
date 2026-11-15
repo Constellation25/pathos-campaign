@@ -1,0 +1,2 @@
+[console_scripts]
+pathos = pathos_ai.cli:pathos
